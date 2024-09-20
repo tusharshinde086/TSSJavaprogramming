@@ -12,4 +12,9 @@ public class PartTimeStaff extends Staff{
   public PartTimeStaff(){
       
   }
+
+    @Override
+    void calculateSalary() {
+
+    }
 }
