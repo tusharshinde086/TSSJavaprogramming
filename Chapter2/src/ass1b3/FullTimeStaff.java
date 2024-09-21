@@ -22,9 +22,3 @@ public class FullTimeStaff extends Staff{
                 ", Department: " + department +
                 ", Salary " +  calculatSalary() + "]" ;
     }
-
-    @Override
-    void calculateSalary() {
-
-    }
-}

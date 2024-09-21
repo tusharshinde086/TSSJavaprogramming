@@ -9,9 +9,7 @@ public class PartTimeStaff extends Staff{
       this.number_of_hours = number_of_hours;
       this.rate_per_hours = rate_per_hours;
   }
-  public PartTimeStaff(){
-      
-  }
+
 
     @Override
     void calculateSalary() {
