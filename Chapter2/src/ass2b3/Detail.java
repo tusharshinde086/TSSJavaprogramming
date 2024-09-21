@@ -1,4 +1,4 @@
-package ass1b3;
+package ass2b3;
 
 import java.util.ArrayList;
 import java.util.Scanner;

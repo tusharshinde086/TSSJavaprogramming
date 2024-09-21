@@ -1,4 +1,4 @@
-package ass1b3;
+package ass2b3;
 
 class FullTimeStaff extends Staff {
     String department;

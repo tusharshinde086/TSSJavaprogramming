@@ -1,7 +1,4 @@
-package ass1b3;
-
-import java.util.ArrayList;
-import java.util.Scanner;
+package ass2b3;
 
 public abstract class Staff {
     String name, address;

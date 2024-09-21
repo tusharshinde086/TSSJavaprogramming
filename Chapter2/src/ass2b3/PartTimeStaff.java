@@ -1,4 +1,4 @@
-package ass1b3;
+package ass2b3;
 
 class PartTimeStaff extends Staff {
     int number_of_hours;

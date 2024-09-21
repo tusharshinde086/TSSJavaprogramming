@@ -1,4 +1,4 @@
-package ass1b2;
+package ass2b2;
 
 public class multilevelInheritance {
     public static void main(String[] args) {

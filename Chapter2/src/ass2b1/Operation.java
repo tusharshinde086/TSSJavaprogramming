@@ -1,5 +1,4 @@
-package ass1b1;
-import jdk.dynalink.beans.StaticClass;
+package ass2b1;
 
 public interface Operation {
     double PI = 3.142;

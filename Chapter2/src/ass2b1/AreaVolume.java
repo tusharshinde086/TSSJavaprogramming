@@ -1,4 +1,4 @@
-package ass1b1;
+package ass2b1;
 
 public class AreaVolume{
     public static void main(String[] args) {
