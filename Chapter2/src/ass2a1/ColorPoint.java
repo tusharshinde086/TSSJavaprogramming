@@ -8,6 +8,6 @@ public class ColorPoint extends Point{
     }
 
     void display(){
-        System.out.println("x = "+ x + "y = "+y+"color="+color);
+        System.out.println("x = "+ x + " y = "+y+" color = "+color);
     }
 }

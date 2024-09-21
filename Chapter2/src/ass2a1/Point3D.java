@@ -7,6 +7,6 @@ public class Point3D extends Point {
        this.z=z;
    }
    void display(){
-       System.out.println("x = "+ x + "y = "+y+"z="+z);
+       System.out.println("x = "+ x + " y = "+y+" z = "+z);
    }
 }

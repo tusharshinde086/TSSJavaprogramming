@@ -9,7 +9,10 @@ public class DisplayMain{
             obj1 = new ColorPoint(22,32,"red");
             obj = new Point3D(32,22,55);
             obj3 = new Point(12, 21);
-       obj
+
+       obj3.display();
+       obj.display();
+       obj1.display();
 
     }
 }
