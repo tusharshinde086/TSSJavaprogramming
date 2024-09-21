@@ -1,14 +1,15 @@
 package ass1b3;
 
-abstract public class Staff {
-    String name;
-    String address;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-    public Staff(String name,String address){
+public abstract class Staff {
+    String name, address;
+
+    Staff(String name, String address) {
         this.name = name;
         this.address = address;
     }
 
-    abstract void calculateSalary();
+    abstract double calculateSalary();
 }
-

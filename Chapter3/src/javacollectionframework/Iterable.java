@@ -17,6 +17,7 @@ public interface Iterable {
     }
 
     class ArrayList implements List {
+
     }
 
     class LinkedList implements List {
@@ -31,7 +32,7 @@ public interface Iterable {
     class PriorityQueue implements Queue {
     }
 
-    class Deque implements Queue {
+    interface Deque extends Queue {
     }
 
     class ArrayDeque implements Deque {
@@ -43,7 +44,7 @@ public interface Iterable {
     class LinkedHashSet implements Set {
     }
 
-    class SortedSet extends Set {
+    class SortedSet implements Set {
     }
 
     class TreeSet extends SortedSet {

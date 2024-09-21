@@ -1,24 +1,25 @@
 package ass1b3;
 
-public class FullTimeStaff extends Staff{
+class FullTimeStaff extends Staff {
     String department;
-    Double salary;
-    Double hra = 0.08* salary;
-    Double da = (Double) (0.05 * salary);
+    double salary, hra, da;
 
-    public FullTimeStaff(String name,String address,String department,Double salary){
-        super(name,address);
-        this.department = department ;
-        this.salary = salary ;
+    FullTimeStaff(String name, String address, String department, double salary) {
+        super(name, address);
+        this.department = department;
+        this.salary = salary;
+        this.hra = 0.08 * salary;
+        this.da = 0.05 * salary;
     }
 
-    double calculatSalary(){
-        return salary +hra +da;
+    @Override
+    double calculateSalary() {
+        return salary + hra + da;
     }
 
+    @Override
     public String toString() {
-        return "FullTimeStaff [Name:" + name +
-                ", Address: "+ address +
-                ", Department: " + department +
-                ", Salary " +  calculatSalary() + "]" ;
+        return "FullTimeStaff [name=" + name + ", address=" + address + ", department=" + department +
+                ", salary=" + calculateSalary() + "]";
     }
+}

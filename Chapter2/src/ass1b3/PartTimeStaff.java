@@ -1,18 +1,23 @@
 package ass1b3;
 
-public class PartTimeStaff extends Staff{
+class PartTimeStaff extends Staff {
     int number_of_hours;
-    Double rate_per_hours;
+    double rate_per_hours;
 
-  PartTimeStaff(int number_of_hours, Double rate_per_hours, String name,String address){
-      super(name, address);
-      this.number_of_hours = number_of_hours;
-      this.rate_per_hours = rate_per_hours;
-  }
-
+    PartTimeStaff(String name, String address, int number_of_hours, double rate_per_hours) {
+        super(name, address);
+        this.number_of_hours = number_of_hours;
+        this.rate_per_hours = rate_per_hours;
+    }
 
     @Override
-    void calculateSalary() {
+    double calculateSalary() {
+        return number_of_hours * rate_per_hours;
+    }
 
+    @Override
+    public String toString() {
+        return "PartTimeStaff [name=" + name + ", address=" + address +
+                ", salary=" + calculateSalary() + "]";
     }
 }
