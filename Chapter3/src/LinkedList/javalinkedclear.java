@@ -24,6 +24,7 @@ public class javalinkedclear {
         System.out.println(obj);
         obj.clear();
         System.out.println(obj);
+
     }
 }
 
