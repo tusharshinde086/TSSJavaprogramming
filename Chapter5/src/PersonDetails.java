@@ -4,9 +4,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class PersonDetails {
-    private static final String URL = "jdbc:postgresql://localhost:5432/your_database_name";
-    private static final String USER = "your_username";
-    private static final String PASSWORD = "your_password";
+    private static final String URL = "jdbc:postgresql://localhost:5432/my_database";
+    private static final String USER = "my_username";
+    private static final String PASSWORD = "my_password";
+
 
     public static void main(String[] args) {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
