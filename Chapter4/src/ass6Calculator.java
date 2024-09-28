@@ -8,7 +8,7 @@ public class ass6Calculator {
 
         public static void main(String[] args) {
             JFrame frame = new JFrame("Calculator");
-            frame.setSize(400, 500);
+            frame.setSize(400, 300);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLayout(new BorderLayout());
 
