@@ -1,6 +1,5 @@
 package assignment1;
 
-
 public class MyDate {
     int dd;
     int mm;

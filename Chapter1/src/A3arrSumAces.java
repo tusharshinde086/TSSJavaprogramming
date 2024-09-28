@@ -9,7 +9,6 @@ public class A3arrSumAces {
             for (int num : array) {
                 sum += num;
             }
-
             Arrays.sort(array);
 
             System.out.println("Sum of array elements: " + sum);
