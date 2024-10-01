@@ -1,3 +1,18 @@
+/*
+mysql> CREATE TABLE Student (
+    ->     roll_number SERIAL PRIMARY KEY,   -- Auto-incrementing roll number
+    ->     name VARCHAR(50) NOT NULL,        -- Student's name
+    ->     percentage DECIMAL(5, 2) NOT NULL -- Student's percentage (up to 100.00)
+    -> );
+
+mysql> INSERT INTO Student (name, percentage) VALUES
+    -> ('Alice', 85.50),
+    -> ('Bob', 90.00),
+    -> ('Charlie', 78.20),
+    -> ('David', 88.75),
+    -> ('Eve', 92.40);
+
+ */
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -8,7 +23,7 @@ import java.sql.*;
       private static final String URL = "jdbc:mysql://localhost:3306/my_database";
       private static final String USER = "new_user";
       private static final String PASSWORD = "system";
-      
+
         public static void main(String[] args) {
             SwingUtilities.invokeLater(() -> {
                 JFrame frame = new JFrame("Student Details");
@@ -51,3 +66,18 @@ import java.sql.*;
         }
     }
 
+    /*
+    output
+
+    +-------------+---------+------------+
+| roll_number | name    | percentage |
++-------------+---------+------------+
+|           1 | Alice   |      85.50 |
+|           2 | Bob     |      90.00 |
+|           3 | Charlie |      78.20 |
+|           4 | David   |      88.75 |
+|           5 | Eve     |      92.40 |
++-------------+---------+------------+
+5 rows in set (0.00 sec)
+
+     */
