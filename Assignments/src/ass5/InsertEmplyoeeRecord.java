@@ -10,13 +10,14 @@ CREATE TABLE Employee (
 );
 
  */
+package ass5;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class InsertEmployeeRecord5 {
+public class InsertEmplyoeeRecord {
         // Database URL and credentials
         private static final String URL = "jdbc:mysql://localhost:3306/my_database";
         private static final String USER = "new_user";
