@@ -110,7 +110,7 @@ import java.util.Scanner;
     }
 
     /*
-    
+
     OUTPUT
 
     Existing Course Records:
