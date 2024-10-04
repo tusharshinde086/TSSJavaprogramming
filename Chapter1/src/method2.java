@@ -1,14 +1,25 @@
-import java.util.*;
+
+
 public class method2 {
-    public static void printname(String name , int age){
-        System.out.println("name:" + name);
-        System.out.println("age:" + age);
-        return;
+        public static void main(String args[]){
+            Main6 obj1 = new Main6();
+            obj1.setData("rani",  "students");
+            obj1.getData();
+        }
     }
-  public static void main(String[]args){
- Scanner sc=new Scanner(System.in);
- String name = sc.next();
-  int age = sc.nextInt();
- printname(name,age);
-  }
-}
+
+    class Main6{
+        private String name;
+        private String status;
+
+        public void getData(){
+            System.out.println("Name:"+name);
+            System.out.println("Status: "+status);
+        }
+
+        public void setData(String name, String status){
+            this.name = name;
+            this.status = status;
+        }
+    }
+
