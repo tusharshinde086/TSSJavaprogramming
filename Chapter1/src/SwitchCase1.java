@@ -1,46 +1,50 @@
-import java.util.Scanner;
-
-public class SwitchCase1 {
-    public static void main(String[] args) {
+import java.util.*;
+class switchCase_01 {
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
+        int number;
+        System.out.print("Enter the day number:");
+        number = sc.nextInt();
 
-        System.out.println("Enter first number: ");
-        int num1 = sc.nextInt();
-
-        System.out.println("Enter second number: ");
-        int num2 = sc.nextInt();
-
-        System.out.println("Choose operation: +, -, *, /");
-        char operator = sc.next().charAt(0);
-
-        int result;
-
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                System.out.println("Sum: " + result);
+        switch(number){
+            case 1:{
+                System.out.print("Monday");
                 break;
-            case '-':
-                result = num1 - num2;
-                System.out.println("Difference: " + result);
+            }
+
+            case 2:{
+                System.out.print("Tuesday");
                 break;
-            case '*':
-                result = num1 * num2;
-                System.out.println("Product: " + result);
+            }
+
+            case 3:{
+                System.out.print("Wednesday");
                 break;
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                    System.out.println("Quotient: " + result);
-                } else {
-                    System.out.println("Cannot divide by zero.");
-                }
+            }
+
+            case 4:{
+                System.out.print("Thursday");
                 break;
-            default:
-                System.out.println("Invalid operator.");
+            }
+
+            case 5:{
+                System.out.print("Friday");
+                break;
+            }
+
+            case 6:{
+                System.out.print("Saturday");
+                break;
+            }
+
+            case 7:{
+                System.out.print("Sunday");
+                break;
+            }
+
+            default:{
+                System.out.print("invalid day selection");
+            }
         }
-
-        sc.close();
     }
 }
-
