@@ -11,7 +11,7 @@ class Child extends Parent {
     }
 }
 
-public class Inheritance5 {
+public class Inheritancesuper5 {
     public static void main(String[] args) {
         Child child = new Child();
         child.display();

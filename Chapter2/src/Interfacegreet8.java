@@ -17,7 +17,7 @@ class Example implements Child {
     }
 }
 
-class InterfaceExample8 {
+class Interfacegreet8 {
     public static void main(String[] args) {
         Example example = new Example();
         example.greet();

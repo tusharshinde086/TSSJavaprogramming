@@ -10,7 +10,7 @@ class Addition implements MathOperation {
     }
 }
 
-class Interface13 {
+class Interfacemathadd13 {
     public static void main(String[] args) {
         MathOperation addition = new Addition();
         int result = addition.operate(10, 5);

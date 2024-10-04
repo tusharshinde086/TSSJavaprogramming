@@ -15,7 +15,7 @@ class MP3Player implements MusicPlayer {
     }
 }
 
-class Interface17 {
+class Interfacemusic17 {
     public static void main(String[] args) {
         MP3Player player = new MP3Player();
         player.playMusic();

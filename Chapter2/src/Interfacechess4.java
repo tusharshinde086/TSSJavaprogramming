@@ -9,7 +9,7 @@ class Chess implements Game {
     }
 }
 
-class InterfaceExample4 {
+class Interfacechess4 {
     public static void main(String[] args) {
         Chess chess = new Chess();
         chess.play();

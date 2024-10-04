@@ -23,7 +23,7 @@ class KeyValue<K, V> implements Pair<K, V> {
     }
 }
 
-class Interface18 {
+class Interfacethis18 {
     public static void main(String[] args) {
         KeyValue<Integer, String> pair = new KeyValue<>(1, "Apple");
         System.out.println("Key: " + pair.getKey() + ", Value: " + pair.getValue());

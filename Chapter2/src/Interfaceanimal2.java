@@ -1,26 +1,22 @@
 
 interface Animal {
     void sound();
+
+    default void sleep() {
+        System.out.println("Sleeping...");
+    }
 }
 
-interface Runnable {
-    void run();
-}
-
-class Dog implements Animal, Runnable {
+class Dog implements Animal {
     public void sound() {
         System.out.println("Bark");
     }
-
-    public void run() {
-        System.out.println("Running...");
-    }
 }
 
-class InterfaceExample3 {
+class Interfaceanimal2 {
     public static void main(String[] args) {
         Dog dog = new Dog();
         dog.sound();
-        dog.run();
+        dog.sleep();
     }
 }

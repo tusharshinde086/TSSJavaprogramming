@@ -13,7 +13,7 @@ class Example implements First, Second {
     }
 }
 
-class InterfaceExample7 {
+class Interfacemethod7 {
     public static void main(String[] args) {
         Example example = new Example();
         example.display();

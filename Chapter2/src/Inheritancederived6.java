@@ -10,7 +10,7 @@ class Derived extends Base {
     }
 }
 
-public class Inheritance6 {
+public class Inheritancederived6 {
     public static void main(String[] args) {
         Derived Obj = new Derived();
     

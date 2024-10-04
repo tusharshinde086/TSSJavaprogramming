@@ -12,7 +12,7 @@ class Football implements Game {
     }
 }
 
-class Interface16 {
+class Interfacefootball16 {
     public static void main(String[] args) {
         Football football = new Football();
         football.play();

@@ -4,7 +4,7 @@ interface Vehicle {
     void drive();
 }
 
-class Interface15 {
+class Interfacevehicle15 {
     public static void main(String[] args) {
         Vehicle car = new Vehicle() {
             public void drive() {

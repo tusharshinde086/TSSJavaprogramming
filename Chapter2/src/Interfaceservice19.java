@@ -22,7 +22,7 @@ class Client {
     }
 }
 
-class Interface19 {
+class Interfaceservice19 {
     public static void main(String[] args) {
         Service service = new ServiceA();
         Client client = new Client(service);

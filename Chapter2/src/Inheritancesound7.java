@@ -8,7 +8,7 @@ class Cat extends Animal {
     }
 }
 
-public class Inheritance7 {
+public class Inheritancesound7 {
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.sound();

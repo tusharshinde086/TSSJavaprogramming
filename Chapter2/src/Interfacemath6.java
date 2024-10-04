@@ -4,10 +4,10 @@ interface MathOperations {
     }
 }
 
-class InterfaceExample6 {
+class Interfacemath6 {
     public static void main(String[] args) {
         int result = MathOperations.add(10, 20);
-        System.out.println("Sum: " + result);
+        System.out.println("Sum is : " + result);
     }
 }
 

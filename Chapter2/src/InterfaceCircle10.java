@@ -8,7 +8,7 @@ class Circle implements Drawable {
     }
 }
 
-class InterfaceExample10 {
+class InterfaceCircle10 {
     public static void drawShape(Drawable d) {
         d.draw();
     }

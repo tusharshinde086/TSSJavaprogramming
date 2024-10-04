@@ -11,6 +11,6 @@ interface MyInterface {
     }
 }
 
-class Interface20 implements MyInterface {
+class Interfacemethod20 implements MyInterface {
 
 
