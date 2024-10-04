@@ -7,7 +7,7 @@ class Example implements Marker {
     }
 }
 
-class Interfaceifelse9 {
+class InterfaceExample9 {
     public static void main(String[] args) {
         Example example = new Example();
         if (example instanceof Marker) {

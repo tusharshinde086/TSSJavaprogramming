@@ -3,7 +3,7 @@
 public class method4 {
         public static void main(String args[]){
             Main7 obj1 = new Main7();
-            obj1.StudentInfo("rani sabale", 4208);
+            obj1.StudentInfo("Tushar Shinde", 4214);
         }
 
     }

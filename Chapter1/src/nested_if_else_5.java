@@ -1,8 +1,4 @@
-//Movie Ticket Pricing
-/**Children (under 13 years): Rs. 100 on weekdays, Rs. 120 on weekends.
-Adults (13 to 64 years): Rs. 150 on weekdays, Rs. 180 on weekends.
-Seniors (65 years and above): Rs. 130 on weekdays, Rs. 150 on weekends.
- */
+
 import java.util.*;
 public class nested_if_else_5 {
     public static void main(String args[]){
