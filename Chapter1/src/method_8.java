@@ -1,5 +1,5 @@
 public class method_8 {
-    //user define mehtod for addition of two numbers
+
     int addition(int a, int b){
         int sum = a + b;
         return sum;
