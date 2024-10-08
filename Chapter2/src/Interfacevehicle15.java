@@ -1,6 +1,6 @@
 package InheritanceInterface;
 
-interface Vehicle {
+interface \Vehicle {
     void drive();
 }
 

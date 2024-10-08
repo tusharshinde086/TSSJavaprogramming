@@ -1,4 +1,4 @@
-/*
+package ass14;/*
 
 CREATE DATABASE my_database;
 
