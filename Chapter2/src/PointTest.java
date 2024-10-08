@@ -1,18 +1,19 @@
-class Point {
+class Point3 {
     int x;
     int y;
 
-    Point() {
+    Point3() {
         this.x = 0;
         this.y = 0;
     }
 
-    Point(int x, int y) {
+    Point3(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
     void display() {
+
         System.out.println("Point coordinates: (" + x + ", " + y + ")");
     }
 }

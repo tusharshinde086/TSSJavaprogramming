@@ -1,8 +1,8 @@
-abstract class Animal {
+abstract class Animal2 {
     abstract void sound();
 }
 
-class Cat extends Animal {
+class Cat extends Animal2 {
     void sound() {
         System.out.println("Cat meows");
     }

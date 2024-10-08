@@ -2,7 +2,7 @@ abstract class Animal1 {
     abstract void sound();
 }
 
-class Cat extends Animal1 {
+class Cat3 extends Animal1 {
     void sound() {
         System.out.println("Meow");
     }
@@ -10,7 +10,7 @@ class Cat extends Animal1 {
 
 public class AbstractClass {
     public static void main(String[] args) {
-        Animal1 cat = new Cat();
+        Cat3 cat = new Cat3();
         cat.sound();
     }
 }

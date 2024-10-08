@@ -1,5 +1,5 @@
 
-interface Animal {
+interface Animal4 {
     void sound();
 }
 
@@ -7,7 +7,7 @@ interface Runnable {
     void run();
 }
 
-class Dog implements Animal, Runnable {
+class Dog2 implements Animal4, Runnable {
     public void sound() {
         System.out.println("Bark");
     }
@@ -19,8 +19,8 @@ class Dog implements Animal, Runnable {
 
 class Interfacedogrun3 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.sound();
-        dog.run();
+        Dog dog2 = new Dog2();
+        dog2.sound();
+        dog2.run();
     }
 }

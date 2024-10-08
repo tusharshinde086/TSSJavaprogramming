@@ -1,5 +1,5 @@
 package ass10;
-import utility.CapitalString;
+import ass10.utility.CapitalString;
 
 public class Person {
     private String name;

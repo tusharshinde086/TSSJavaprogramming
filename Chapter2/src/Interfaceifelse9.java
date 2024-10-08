@@ -1,7 +1,7 @@
 
 interface Marker {}
 
-class Example implements Marker {
+class Example3 implements Marker {
     public void display() {
         System.out.println("This class implements Marker interface.");
     }
@@ -9,9 +9,9 @@ class Example implements Marker {
 
 class InterfaceExample9 {
     public static void main(String[] args) {
-        Example example = new Example();
-        if (example instanceof Marker) {
-            example.display();
+        Example example3 = new Example();
+        if (example3 instanceof Marker) {
+            example3.display();
         } else {
             System.out.println("Marker not implemented.");
         }

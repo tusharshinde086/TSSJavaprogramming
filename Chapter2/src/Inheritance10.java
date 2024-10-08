@@ -1,10 +1,12 @@
 class FinalClass {
     final void display() {
+
         System.out.println("Final method");
     }
 }
 
 class SubClass extends FinalClass {
+
     // Cannot override the final method
 }
 

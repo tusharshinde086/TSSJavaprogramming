@@ -1,13 +1,13 @@
 
-interface Parent {
+interface Parent2 {
     void greet();
 }
 
-interface Child extends Parent {
+interface Child2 extends Parent2 {
     void sayHello();
 }
 
-class Example implements Child {
+class Example implements Child2 {
     public void greet() {
         System.out.println("Hello from Parent");
     }

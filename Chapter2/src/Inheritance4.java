@@ -1,25 +1,27 @@
-class Parent {
+class Parent5 {
     void display() {
+
         System.out.println("Parent class");
     }
 }
 
-class Child1 extends Parent {
+class Child3 extends Parent5 {
     void show() {
         System.out.println("Child 1");
     }
 }
 
-class Child2 extends Parent {
+class child5 extends Parent5 {
     void print() {
+
         System.out.println("Child 2");
     }
 }
 
 public class Inheritance4 {
     public static void main(String[] args) {
-        Child1 c1 = new Child1();
-        Child2 c2 = new Child2();
+        child5 c1 = new child5();
+        child5 c2 = new child5();
         c1.display();
         c2.display();
     }

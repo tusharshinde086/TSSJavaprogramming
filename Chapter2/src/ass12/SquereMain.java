@@ -1,6 +1,6 @@
 package ass12;
 
-import Series.SquareSeries;
+import ass12.Series.SquareSeries;
 
 import java.util.Scanner;
 
