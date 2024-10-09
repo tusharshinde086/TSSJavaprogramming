@@ -19,8 +19,8 @@ CREATE TABLE id_cards (
 );
 
 */
-package idcardgeneratingsystem;
 
+package idcardgeneratingsystem;
 
 import com.toedter.calendar.JDateChooser;
 import javax.swing.*;
@@ -35,7 +35,8 @@ public class Home extends JFrame {
     private JComboBox<String> cmbGender;
     private JDateChooser bdate, idate;
 
-    private static final String URL = "jdbc:mysql://localhost:3306/my_database";
+    // Ensure you use the correct database name here
+    private static final String URL = "jdbc:mysql://localhost:3306/my_database"; // Updated to correct database
     private static final String USER = "new_user";
     private static final String PASS = "system";
     private int lvalue = 1000; // Initial value for NIC generation
@@ -47,7 +48,6 @@ public class Home extends JFrame {
     private void initComponents() {
         setTitle("ID Card Generating System");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-
 
         txtName = new JTextField(15);
         txtCountry = new JTextField(15);
@@ -64,7 +64,7 @@ public class Home extends JFrame {
         add(txtCountry);
         add(new JLabel("Address:"));
         add(txtAddress);
-        add(new JLabel("Class :"));
+        add(new JLabel("Info:"));  // Changed from "Class:" to "Info:"
         add(txtInfo);
         add(new JLabel("Gender:"));
         add(cmbGender);
@@ -82,6 +82,7 @@ public class Home extends JFrame {
     private void submitData() {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASS);
              PreparedStatement pst = conn.prepareStatement("INSERT INTO id_cards (name, country, address, gender, info, birthdate, issuedate) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
+
             pst.setString(1, txtName.getText());
             pst.setString(2, txtCountry.getText());
             pst.setString(3, txtAddress.getText());
@@ -92,7 +93,7 @@ public class Home extends JFrame {
             pst.executeUpdate();
             showMessage("Data Submitted Successfully!");
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("SQL Error: " + e.getMessage());
         }
     }
 
@@ -128,10 +129,9 @@ public class Home extends JFrame {
                 JOptionPane.showMessageDialog(null, "No data found!");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("SQL Error: " + e.getMessage());
         }
     }
-
 
     private String generateNIC(java.sql.Date birthdate, String gender) {
         String year = new SimpleDateFormat("yy").format(birthdate);
@@ -141,10 +141,6 @@ public class Home extends JFrame {
 
     private String formatDate(JDateChooser dateChooser) {
         return new SimpleDateFormat("yyyy-MM-dd").format(dateChooser.getDate());
-    }
-
-    private String formatDate(java.sql.Date date) {
-        return new SimpleDateFormat("yyyy-MM-dd").format(date);
     }
 
     private void showMessage(String message) {
