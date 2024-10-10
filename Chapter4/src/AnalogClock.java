@@ -42,7 +42,6 @@ public class AnalogClock extends JPanel implements ActionListener {
         g2d.setStroke(new BasicStroke(6)); // Set the outline width
         g2d.drawOval(centerX - radius, centerY - radius, radius * 2, radius * 2);
 
-        // Draw the numbers on the clock with increased size and bold style
         g.setColor(Color.BLACK); // Set color for numbers
         g.setFont(new Font("Serif", Font.BOLD, 24)); // Change font size and style
         for (int i = 1; i <= 12; i++) {
@@ -59,15 +58,15 @@ public class AnalogClock extends JPanel implements ActionListener {
             int startX = (int) (centerX + (radius - 10) * Math.sin(angle)); // Start position for markers
             int startY = (int) (centerY - (radius - 10) * Math.cos(angle)); // Start position for markers
             int endX = (int) (centerX + radius * Math.sin(angle)); // End position for markers
-            int endY = (int) (centerY - radius * Math.cos(angle)); // End position for markers
-            g.drawLine(startX, startY, endX, endY); // Draw minute markers
+            int endY = (int) (centerY - radius * Math.cos(angle));
+            g.drawLine(startX, startY, endX, endY);
         }
 
         // Get the current time
         LocalTime now = LocalTime.now();
         int second = now.getSecond();
         int minute = now.getMinute();
-        int hour = now.getHour() % 12; // Convert to 12-hour format
+        int hour = now.getHour() % 12;
 
         // Draw the hands of the clock
         drawHand(g, centerX, centerY, hour * 30 + minute / 2, radius * 0.4f, Color.BLUE, 8); // Hour hand (blue, bold)
@@ -79,7 +78,7 @@ public class AnalogClock extends JPanel implements ActionListener {
         // Set color and stroke thickness for the hand
         g.setColor(color);
         Graphics2D g2d = (Graphics2D) g;
-        g2d.setStroke(new BasicStroke(thickness)); // Set the thickness of the hand
+        g2d.setStroke(new BasicStroke(thickness));
 
         double radians = Math.toRadians(angle);
         int x = (int) (centerX + length * Math.sin(radians));

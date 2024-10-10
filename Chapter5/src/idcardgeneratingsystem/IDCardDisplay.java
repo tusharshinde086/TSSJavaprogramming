@@ -11,7 +11,7 @@ public class IDCardDisplay extends JFrame {
             String idNo, String classValue, String rollNo, String bloodGroup
     ) {
         setTitle("ID Card Display");
-        setSize(260, 380);
+        setSize(260, 345);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         JPanel mainPanel = new JPanel();
@@ -21,6 +21,7 @@ public class IDCardDisplay extends JFrame {
         JPanel collegePanel = new JPanel();
         collegePanel.setLayout(new BoxLayout(collegePanel, BoxLayout.Y_AXIS));
         collegePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        collegePanel.setBackground(Color.WHITE);
 
         JLabel collegeLabel1 = new JLabel(collegeName1);
         collegeLabel1.setForeground(Color.BLUE);
@@ -38,8 +39,10 @@ public class IDCardDisplay extends JFrame {
         collegePanel.add(collegeLabel2);
         collegePanel.add(collegeLabel3);
 
-        JLabel idCardLabel = new JLabel("Identity Card - " + identityCardYear);
-        idCardLabel.setForeground(Color.BLUE);
+        JLabel idCardLabel = new JLabel("  Identity Card - " + identityCardYear + "-"+ 2025 );
+        idCardLabel.setForeground(Color.blue);
+
+
         idCardLabel.setFont(new Font("Arial", Font.BOLD, 16));
         collegePanel.add(idCardLabel);
 
@@ -51,7 +54,7 @@ public class IDCardDisplay extends JFrame {
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
 
         ImageIcon photo = new ImageIcon(imagePath);
-        Image img = photo.getImage().getScaledInstance(100, 150, Image.SCALE_SMOOTH); // Resize to 100x150 pixels
+        Image img = photo.getImage().getScaledInstance(105, 145, Image.SCALE_SMOOTH); // Resize to 100x150 pixels
         JLabel photoLabel = new JLabel(new ImageIcon(img));
 
         leftPanel.add(photoLabel);
