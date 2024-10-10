@@ -76,25 +76,13 @@ public class Game implements ActionListener{
 	 * else false
 	 */
 	private boolean stopped;
-	
-	/**
-	 * the maximal number of rows of bubbles on the screen
-	 */
+
 	public static final int ROW_COUNT = 16;
-	
-	/**
-	 * the number of bubbles in a row that fill the field in width
-	 */
+
 	public static final int COL_COUNT_FULL = 14;
-	
-	/**
-	 * the number of bubbles in a row that does not fill the field in width
-	 */
+
 	public static final int COL_COUNT = 13;
-	
-	/**
-	 * the score received for a shot bubble
-	 */
+
 	public static final int SCORE_SHOT = 10;
 	
 	/**

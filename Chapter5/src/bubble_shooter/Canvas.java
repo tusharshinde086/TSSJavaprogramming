@@ -29,12 +29,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-/**
- * the class for providing a canvas for the game and the highscores,
- * and for managing the highscores
- * @author Barni
- *
- */
+
 public class Canvas extends JPanel implements
 		MouseMotionListener, MouseListener, ActionListener {
 	
