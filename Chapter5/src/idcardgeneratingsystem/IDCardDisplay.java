@@ -11,15 +11,13 @@ public class IDCardDisplay extends JFrame {
             String idNo, String classValue, String rollNo, String bloodGroup
     ) {
         setTitle("ID Card Display");
-        setSize(280, 430); // Set overall size
+        setSize(280, 400); 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        // Create main panel
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setBackground(Color.WHITE);
 
-        // College Name Panel
         JPanel collegePanel = new JPanel();
         collegePanel.setLayout(new BoxLayout(collegePanel, BoxLayout.Y_AXIS));
         collegePanel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -40,7 +38,6 @@ public class IDCardDisplay extends JFrame {
         collegePanel.add(collegeLabel2);
         collegePanel.add(collegeLabel3);
 
-        // Identity Card Label
         JLabel idCardLabel = new JLabel("Identity Card - " + identityCardYear);
         idCardLabel.setForeground(Color.BLUE);
         idCardLabel.setFont(new Font("Arial", Font.BOLD, 16));
@@ -48,23 +45,19 @@ public class IDCardDisplay extends JFrame {
 
         mainPanel.add(collegePanel, BorderLayout.NORTH);
 
-        // Photo and Info Panel
         JPanel infoPanel = new JPanel(new BorderLayout());
 
-        // Left side: Photo
         JPanel leftPanel = new JPanel();
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
 
-        // Load and resize the image
         ImageIcon photo = new ImageIcon(imagePath);
         Image img = photo.getImage().getScaledInstance(100, 150, Image.SCALE_SMOOTH); // Resize to 100x150 pixels
         JLabel photoLabel = new JLabel(new ImageIcon(img));
 
-        leftPanel.add(photoLabel); // Add photo
+        leftPanel.add(photoLabel);
 
-        // Right side: Info fields
         JPanel rightPanel = new JPanel();
-        rightPanel.setLayout(new GridLayout(0, 1)); // Vertical stacking
+        rightPanel.setLayout(new GridLayout(0, 1));
         rightPanel.setBackground(Color.WHITE);
 
         rightPanel.add(createLabelValue("ID No:", idNo));
@@ -73,7 +66,6 @@ public class IDCardDisplay extends JFrame {
         rightPanel.add(createLabelValue("Blood Group:", bloodGroup));
         rightPanel.add(createLabelValue("Birth Date:", birthdate));
 
-        // Add both panels to infoPanel
         JPanel combinedPanel = new JPanel();
         combinedPanel.setLayout(new BorderLayout());
         combinedPanel.add(leftPanel, BorderLayout.WEST);
@@ -82,7 +74,6 @@ public class IDCardDisplay extends JFrame {
         infoPanel.add(combinedPanel, BorderLayout.SOUTH);
         mainPanel.add(infoPanel, BorderLayout.CENTER);
 
-        // Name and Address Panel
         JPanel bottomPanel = new JPanel(new GridBagLayout());
         bottomPanel.setBackground(Color.WHITE);
         GridBagConstraints gbc = new GridBagConstraints();
@@ -90,31 +81,26 @@ public class IDCardDisplay extends JFrame {
         gbc.gridx = 0;
         gbc.gridy = 0;
 
-        // Name
         JLabel nameLabel = new JLabel(name);
         nameLabel.setForeground(Color.BLUE);
         nameLabel.setFont(new Font("Arial", Font.BOLD, 20)); // Large font for name
         bottomPanel.add(nameLabel, gbc);
 
-        // Address
         gbc.gridy++;
         JLabel addressLabel = new JLabel(address);
         addressLabel.setForeground(Color.BLACK);
         addressLabel.setFont(new Font("Arial", Font.PLAIN, 12)); // Smaller font for address
         bottomPanel.add(addressLabel, gbc);
 
-        // NIC
         gbc.gridy++;
         bottomPanel.add(createLabelValue("NIC:", nic), gbc);
 
-        // Mobile number
         gbc.gridy++;
         JLabel mobileLabel = new JLabel("Mobile: " + mobile);
         mobileLabel.setForeground(Color.BLACK);
         mobileLabel.setFont(new Font("Arial", Font.PLAIN, 10)); // Smaller font for mobile
         bottomPanel.add(mobileLabel, gbc);
 
-        // Signature
         gbc.gridy++;
         JLabel signatureLabel = new JLabel("Signature: ___________________");
         signatureLabel.setForeground(Color.BLACK);
@@ -128,18 +114,17 @@ public class IDCardDisplay extends JFrame {
         setVisible(true);
     }
 
-    // Helper method to create label-value pairs
     private JPanel createLabelValue(String labelText, String valueText) {
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        panel.setBackground(Color.WHITE); // Match background color
+        panel.setBackground(Color.WHITE);
 
         JLabel label = new JLabel(labelText);
         label.setForeground(Color.BLUE);
-        panel.add(label); // Add label
+        panel.add(label);
 
         JLabel valueLabel = new JLabel(valueText);
         valueLabel.setForeground(Color.BLACK);
-        panel.add(valueLabel); // Add value label
+        panel.add(valueLabel);
 
         return panel;
     }
