@@ -80,6 +80,7 @@ public class Home extends JFrame {
         }});
 
         pack();
+        setLocation(100, 100);
         setVisible(true);
     }
 
@@ -104,7 +105,7 @@ public class Home extends JFrame {
             pst.setString(11, txtClass.getText());
             pst.setString(12, txtRollNo.getText());
             pst.setString(13, txtBloodGroup.getText());
-            pst.setString(14, txtImagePath.getText()); // Save the image path
+            pst.setString(14, txtImagePath.getText());
 
             pst.executeUpdate();
             showMessage("Data Submitted Successfully!");
@@ -122,7 +123,7 @@ public class Home extends JFrame {
              ResultSet rs = stmt.executeQuery(query)) {
 
             if (rs.next()) {
-                // Retrieve college names and other fields
+
                 String collegeName1 = rs.getString("college_name1");
                 String collegeName2 = rs.getString("college_name2");
                 String collegeName3 = rs.getString("college_name3");

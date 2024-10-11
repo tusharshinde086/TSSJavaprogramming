@@ -54,7 +54,7 @@ public class IDCardDisplay extends JFrame {
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
 
         ImageIcon photo = new ImageIcon(imagePath);
-        Image img = photo.getImage().getScaledInstance(105, 145, Image.SCALE_SMOOTH); // Resize to 100x150 pixels
+        Image img = photo.getImage().getScaledInstance(105, 145, Image.SCALE_SMOOTH);
         JLabel photoLabel = new JLabel(new ImageIcon(img));
 
         leftPanel.add(photoLabel);
@@ -86,13 +86,13 @@ public class IDCardDisplay extends JFrame {
 
         JLabel nameLabel = new JLabel(name);
         nameLabel.setForeground(Color.BLUE);
-        nameLabel.setFont(new Font("Arial", Font.BOLD, 20)); // Large font for name
+        nameLabel.setFont(new Font("Arial", Font.BOLD, 20));
         bottomPanel.add(nameLabel, gbc);
 
         gbc.gridy++;
         JLabel addressLabel = new JLabel(address);
         addressLabel.setForeground(Color.BLACK);
-        addressLabel.setFont(new Font("Arial", Font.PLAIN, 12)); // Smaller font for address
+        addressLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         bottomPanel.add(addressLabel, gbc);
 
         gbc.gridy++;
@@ -101,19 +101,20 @@ public class IDCardDisplay extends JFrame {
         gbc.gridy++;
         JLabel mobileLabel = new JLabel("Mobile: " + mobile);
         mobileLabel.setForeground(Color.BLACK);
-        mobileLabel.setFont(new Font("Arial", Font.PLAIN, 10)); // Smaller font for mobile
+        mobileLabel.setFont(new Font("Arial", Font.PLAIN, 10));
         bottomPanel.add(mobileLabel, gbc);
 
         gbc.gridy++;
         JLabel signatureLabel = new JLabel("Signature: ___________________");
         signatureLabel.setForeground(Color.BLACK);
-        signatureLabel.setFont(new Font("Arial", Font.PLAIN, 12)); // Smaller font for signature
+        signatureLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         signatureLabel.setHorizontalAlignment(SwingConstants.RIGHT);
         bottomPanel.add(signatureLabel, gbc);
 
         mainPanel.add(bottomPanel, BorderLayout.SOUTH);
 
         setContentPane(mainPanel);
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 

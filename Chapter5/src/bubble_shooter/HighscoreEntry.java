@@ -6,35 +6,20 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Comparator;
 
-/**
- * a class that can store an entry of highscore
- * @author Barni
- *
- */
 public class HighscoreEntry implements Serializable, Comparable<HighscoreEntry>, Comparator<HighscoreEntry>{
 	private String name;
 	private long score;
 	private int rows;
 	private int color;
 	
-	/**
-	 * constructor for the class
-	 * @param name name of the player
-	 * @param score achieved score
-	 * @param rows initial number of rows
-	 * @param color colors used
-	 */
+
 	public HighscoreEntry(String name, long score, int rows, int color) {
 		this.name = name;
 		this.score = score;
 		this.rows = rows;
 		this.color = color;
 	}
-	
-	/**
-	 * getter for the name
-	 * @return the name of the player
-	 */
+
 	public String getName() {
 		return name;
 	}
