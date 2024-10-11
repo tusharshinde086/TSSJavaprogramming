@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f7ef12f-c939-4062-b6f7-51a67cd7465b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass14/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass14/MainRoll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass15/MainEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass15/MainFruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass16/MainEmployee1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass16/MyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/src/ass17/MyNumberOdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/src/JdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/src/ass14/JdbcConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/src/ass14.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter2/src/Interfacevehicle15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter2/src/Interfacevehicle15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/Home.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/IDCardDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/f2image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/f3image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/fimage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/image11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/m1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/m2image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter6/src/idcardgeneratingsystem/m3image.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

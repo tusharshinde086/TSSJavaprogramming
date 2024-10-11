@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>CurrentDateTimeServlet</servlet-name>
+        <servlet-class>com.example.servlet.CurrentDateTimeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CurrentDateTimeServlet</servlet-name>
+        <url-pattern>/currentdatetime</url-pattern>
+    </servlet-mapping>
+</web-app>
